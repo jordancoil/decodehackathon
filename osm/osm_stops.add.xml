@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat  9 Nov 17:08:40 2019 by Eclipse SUMO netedit Version 1.3.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/Users/Maxwell/repos/hackathon/osm/osm.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/Users/Maxwell/repos/hackathon/osm/osm.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <opposites.guess.fix-lengths value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/Users/Maxwell/repos/hackathon/osm/osm_stops.add.xml"/>
+    </netedit>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="50268" lane="342241110#1_0" startPos="16.64" endPos="26.64" name="Eastbound University Blvd at Allison Rd"/>
+    <busStop id="50270" lane="342241101#0_0" startPos="80.77" endPos="90.77" name="Eastbound University Blvd at 5300 Block"/>
+    <busStop id="50271" lane="480409005#0_0" startPos="49.21" endPos="59.21" name="Eastbound University Blvd at 5100 Block"/>
+    <busStop id="50602" lane="4611767#2_0" startPos="96.91" endPos="106.91" name="Westbound University Blvd at 5100 Block"/>
+    <busStop id="50603" lane="342241103_0" startPos="27.39" endPos="37.39" name="Westbound University Blvd at 5300 Block"/>
+    <busStop id="50604" lane="342241100#1_0" startPos="2.66" endPos="12.66" name="Westbound University Blvd at Acadia Rd"/>
+    <busStop id="50605" lane="342241106_0" startPos="50.60" endPos="60.60" name="Westbound University Blvd at Allison Rd"/>
+    <busStop id="51479" lane="476050527#0_0" startPos="53.13" endPos="63.13" name="Southbound Wesbrook Mall at Agronomy Rd"/>
+    <busStop id="51480" lane="232493265#2_0" startPos="41.55" endPos="51.55" name="Southbound Wesbrook Mall at Thunderbird Blvd"/>
+    <busStop id="51483" lane="232493265#11_0" startPos="20" endPos="30" name="Southbound Wesbrook Mall at Hampton Place"/>
+    <busStop id="51484" lane="-36836347_0" startPos="42.08" endPos="52.08" name="Eastbound W 16 Ave at Wesbrook Mall"/>
+    <busStop id="51485" lane="255617622#1_0" startPos="452.12" endPos="462.12"/>
+    <busStop id="51598" lane="76232780_0" startPos="395.11" endPos="405.11"/>
+    <busStop id="51600" lane="36836343#6_0" startPos="43.01" endPos="53.01" name="Northbound Wesbrook Mall at 2900 Block"/>
+    <busStop id="51881" lane="-119633486#1_0" startPos="19.58" endPos="29.58"/>
+    <busStop id="51882" lane="36836344#1_0" startPos="74.72" endPos="84.72"/>
+    <busStop id="51883" lane="255865855#1_0" startPos="43.12" endPos="53.12" name="Westbound W 16 Ave at SW Marine Dr"/>
+    <busStop id="51900" lane="74399868_0" startPos="67.49" endPos="77.49" name="Eastbound W 16 Ave at SW Marine Dr"/>
+    <busStop id="51901" lane="78485530#1_0" startPos="38.21" endPos="48.21"/>
+    <busStop id="51916" lane="385645148#0_0" startPos="36.46" endPos="46.46" name="Westbound Chancellor Blvd at Hamber Rd"/>
+    <busStop id="51917" lane="303129467#1_0" startPos="23.38" endPos="33.38" name="Westbound Chancellor Blvd at Allison Rd"/>
+    <busStop id="51919" lane="-255865853#2_0" startPos="22.07" endPos="32.07" name="Westbound NW Marine Dr at Cecil Green Park Rd"/>
+    <busStop id="51925" lane="255865853#0_0" startPos="10.67" endPos="20.67" name="Eastbound NW Marine Dr at West Mall"/>
+    <busStop id="51928" lane="340383376#2_0" startPos="33.47" endPos="43.47" name="Eastbound Chancellor Blvd at Western Parkway"/>
+    <busStop id="51930" lane="303129468#3_0" startPos="60.48" endPos="70.48" name="Eastbound Chancellor Blvd at Hamber Rd"/>
+    <busStop id="57938" lane="342241108_0" startPos="53.59" endPos="63.59" name="Eastbound University Blvd at Acadia Rd"/>
+    <busStop id="58606" lane="232490554#5_0" startPos="17.89" endPos="27.89" name="Northbound Wesbrook Mall at 2100 Block"/>
+    <busStop id="58895" lane="341691684#0_0" startPos="17.01" endPos="27.01" name="UBC Exchange at Bay 10"/>
+    <busStop id="59489" lane="475267407_0" startPos="34.50" endPos="44.50"/>
+    <busStop id="59490" lane="665650795_0" startPos="14.83" endPos="24.83" name="Westbound SW Marine Dr Wesbrook Mall"/>
+    <busStop id="59587" lane="507832770#13_0" startPos="12.40" endPos="22.40" name="Northbound Lower Mall at University Blvd"/>
+    <busStop id="59715" lane="232493266#0_0" startPos="51.44" endPos="61.44" name="Northbound Wesbrook Mall at Thunderbird Blvd"/>
+    <busStop id="59937" lane="232491274#2_0" startPos="17.71" endPos="27.71" name="Southbound Wesbrook Mall at University Blvd"/>
+    <busStop id="59940" lane="75119993#3_0" startPos="9.00" endPos="19.00" name="Westbound Stadium Rd at West Mall"/>
+    <busStop id="59941" lane="75119998#3_0" startPos="20.33" endPos="30.33" name="Southbound West Mall at Hawthorn Lane"/>
+    <busStop id="59942" lane="-8149308#3_0" startPos="20.52" endPos="30.52" name="Westbound Thunderbird Blvd at Larkin Dr"/>
+    <busStop id="59946" lane="340383389#0_0" startPos="21.00" endPos="31.00" name="Southbound Wesbrook Mall at Iona Dr"/>
+    <busStop id="59957" lane="255865853#4_0" startPos="14.37" endPos="24.37" name="Eastbound NW Marine Dr at East Mall"/>
+    <busStop id="59964" lane="6274923#3_0" startPos="101.27" endPos="111.27" name="Northbound NW Marine Dr at Agronomy Rd"/>
+    <busStop id="60158" lane="517643071#1_0" startPos="147.18" endPos="157.18"/>
+    <busStop id="60160" lane="737401700#0_0" startPos="69.87" endPos="79.87" name="UBC Exchange at Bay 3"/>
+    <busStop id="60162" lane="547529785#0_0" startPos="10.75" endPos="20.75" name="UBC Exchange at Bay 4"/>
+    <busStop id="60163" lane="517643071#1_0" startPos="163.52" endPos="173.52"/>
+    <busStop id="61043" lane="36836347_0" startPos="53.96" endPos="63.96"/>
+    <busStop id="61424" lane="4682884#2_0" startPos="3.35" endPos="13.35" name="Southbound West Mall at NW Marine Dr"/>
+    <busStop id="61579" lane="255866004#4_0" startPos="23.17" endPos="33.17" name="Southbound Wesbrook Mall at Birney Ave"/>
+    <busStop id="61580" lane="-255866004#1_0" startPos="14.50" endPos="24.50" name="Northbound Wesbrook Mall at Birney Ave"/>
+    <busStop id="61581" lane="119633486#1_0" startPos="11.55" endPos="21.55" name="Southbound Wesbrook Mall Triumf Centre"/>
+    <busStop id="61701" lane="341691684#1_0" startPos="28.03" endPos="38.03" name="UBC Exchange at Bay 11"/>
+    <busStop id="61702" lane="341691684#2_0" startPos="15.09" endPos="25.09" name="UBC Exchange at Bay 12"/>
+    <busStop id="61832" lane="108152050#0_0" startPos="28.67" endPos="38.67" name="Southbound East Mall at Eagles Dr"/>
+    <busStop id="61833" lane="89183638#1_0" startPos="64.33" endPos="74.33"/>
+    <busStop id="61893" lane="135569565#0_0" startPos="51.26" endPos="61.26" name="Westbound Ross Dr at Birney Ave"/>
+    <busStop id="61894" lane="-135569565#0_0" startPos="23.18" endPos="33.18" name="Eastbound Ross Dr at Birney Ave"/>
+    <busStop id="61895" lane="8149308#7_0" startPos="7.17" endPos="17.17"/>
+    <busStop id="61896" lane="-507832770#13_0" startPos="9.08" endPos="19.08" name="Southbound Lower Mall at University Blvd"/>
+    <busStop id="61900" lane="507832768#1_0" startPos="28.43" endPos="38.43" name="Eastbound Agronomy Rd at West Mall"/>
+    <busStop id="61935" lane="517643071#2_0" startPos="40.33" endPos="50.33" name="UBC Exchange at Bay 7"/>
+    <busStop id="61979" lane="340581989#2_0" startPos="17.32" endPos="27.32" name="UBC Exchange at Bay 5"/>
+</additional>

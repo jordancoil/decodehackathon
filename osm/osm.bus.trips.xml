@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/alexey/Sumo/2019-11-05-18-04-39/osm.net.xml"/>
+        <route-files value="/home/alexey/Sumo/2019-11-05-18-04-39/osm.bus.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/alexey/Sumo/2019-11-05-18-04-39/osm.bus.trips.xml.tmp"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+
+
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus_bus" vClass="bus"/>
+
+    <!--We define our own type for buses-->
+    <vType id="BUS" vClass="bus" accel="2.6" decel="4.5" sigma="0" length="12" minGap="3" maxSpeed="60" color="1,1,0" guiShape="bus"/>
+
+    <!-- We define flows to describe bus routes with stops and specific intervals-->
+
+    <flow id="68inbound" color="1,1,0"  begin="0" end= "3600" period="900" type="BUS" from="-8149308#3" to="684296429#5">
+        <stop busStop="59942" duration="20"/>
+        <stop busStop="59941" duration="20"/>
+        <stop busStop="59940" duration="20"/>
+        <stop busStop="59964" duration="20"/>
+        <stop busStop="59587" duration="20"/>
+        <stop busStop="51925" duration="20"/>
+        <stop busStop="59957" duration="20"/>
+        <stop busStop="59946" duration="20"/>
+
+    </flow>
+
+    <flow id="68outbound" color="1,1,0"  begin="0" end= "3600" period="900" type="BUS" from="517643071#1" to="8149308#7">
+        <stop busStop="60158" duration="20"/>
+        <stop busStop="51919" duration="20"/>
+        <stop busStop="61424" duration="20"/>
+        <stop busStop="59715" duration="20"/>
+        <stop busStop="61896" duration="20"/>
+        <stop busStop="61900" duration="20"/>
+        <stop busStop="61895" duration="20"/>
+    </flow>
+
+    <flow id="99west" color="1,1,0"  begin="10" end= "3600" period="120" type="BUS" from="4611767#0" to="684296429#5">
+        <stop busStop="50605" duration="20"/>
+    </flow>
+
+    <flow id="99east" color="1,1,0"  begin="10" end= "3600" period="120" type="BUS" from="517643071#2" to="480409005#1">
+        <stop busStop="61935" duration="20"/> <!-- loading stop -->
+        <stop busStop="50268" duration="20"/>
+    </flow>
+
+    <flow id="4east" color="1,1,0"  begin="50" end= "3600" period="360" type="BUS" from="341691684#0" to="480409005#1">
+        <stop busStop="58895" duration="20"/>
+        <stop busStop="50268" duration="20"/>
+        <stop busStop="57938" duration="20"/>
+        <stop busStop="50270" duration="20"/>
+        <stop busStop="50271" duration="20"/>
+    </flow>
+
+    <flow id="4west" color="1,1,0"  begin="50" end= "3600" period="360" type="BUS" from="4611767#0" to="341691680#3">
+      <stop busStop="50602" duration="20"/>
+      <stop busStop="50603" duration="20"/>
+      <stop busStop="50604" duration="20"/>
+      <stop busStop="50605" duration="20"/>
+    </flow>
+
+    <flow id="14east" color="1,1,0"  begin="60" end= "3600" period="360" type="BUS" from="341691684#1" to="480409005#1">
+        <stop busStop="61701" duration="20"/>
+        <stop busStop="50268" duration="20"/>
+        <stop busStop="57938" duration="20"/>
+        <stop busStop="50270" duration="20"/>
+        <stop busStop="50271" duration="20"/>
+    </flow>
+
+    <flow id="14west" color="1,1,0"  begin="60" end= "3600" period="360" type="BUS" from="4611767#0" to="341691680#3">
+        <stop busStop="50602" duration="20"/>
+        <stop busStop="50603" duration="20"/>
+        <stop busStop="50604" duration="20"/>
+        <stop busStop="50605" duration="20"/>
+    </flow>
+
+    <flow id="41east" color="1,1,0"  begin="120" end= "3600" period="900" type="BUS" from="517643071#1" to="665650793">
+        <stop busStop="60163" duration="20"/>
+        <stop busStop="51479" duration="20"/>
+        <stop busStop="51480" duration="20"/>
+        <stop busStop="51483" duration="20"/>
+        <stop busStop="61579" duration="20"/>
+        <stop busStop="61581" duration="20"/>
+        <stop busStop="59489" duration="20"/>
+    </flow>
+
+    <flow id="41west" color="1,1,0"  begin="120" end= "3600" period="900" type="BUS" from="106468046" to="684296429#5">
+        <stop busStop="51881" duration="20"/>
+        <stop busStop="61580" duration="20"/>
+        <stop busStop="51600" duration="20"/>
+        <stop busStop="59715" duration="20"/>
+        <stop busStop="58606" duration="20"/>
+    </flow>
+
+    <flow id="33east" color="1,1,0"  begin="240" end= "3600" period="480" type="BUS" from="517643071#1" to="255617622#1">
+        <stop busStop="60158" duration="20"/>
+        <stop busStop="51479" duration="20"/>
+        <stop busStop="51480" duration="20"/>
+        <stop busStop="51483" duration="20"/>
+        <stop busStop="51484" duration="20"/>
+        <stop busStop="51485" duration="20"/>
+    </flow>
+
+    <flow id="33west" color="1,1,0"  begin="240" end= "3600" period="480" type="BUS" from="76232780" to="684296429#5">
+        <stop busStop="51598" duration="20"/>
+        <stop busStop="61043" duration="20"/>
+        <stop busStop="51600" duration="20"/>
+        <stop busStop="59715" duration="20"/>
+        <stop busStop="58606" duration="20"/>
+    </flow>
+
+    <flow id="25east" color="1,1,0"  begin="540" end= "3600" period="600" type="BUS" from="340581989#2" to="255617622#1">
+        <stop busStop="61979" duration="20"/>
+        <stop busStop="51479" duration="20"/>
+        <stop busStop="51480" duration="20"/>
+        <stop busStop="51483" duration="20"/>
+        <stop busStop="51484" duration="20"/>
+        <stop busStop="51485" duration="20"/>
+    </flow>
+
+    <flow id="25west" color="1,1,0"  begin="540" end= "3600" period="600" type="BUS" from="76232780" to="684296429#5">
+        <stop busStop="51598" duration="20"/>
+        <stop busStop="61043" duration="20"/>
+        <stop busStop="51600" duration="20"/>
+        <stop busStop="59715" duration="20"/>
+        <stop busStop="58606" duration="20"/>
+    </flow>
+
+    <flow id="70inbound" color="1,1,0"  begin="540" end= "3600" period="900" type="BUS" from="8149308#7" to="684296429#5">
+        <stop busStop="61895" duration="20"/>
+        <stop busStop="61832" duration="20"/>
+        <stop busStop="61894" duration="20"/>
+        <stop busStop="61580" duration="20"/>
+        <stop busStop="51600" duration="20"/>
+        <stop busStop="59715" duration="20"/>
+        <stop busStop="58606" duration="20"/>
+    </flow>
+
+    <flow id="70outbound" color="1,1,0"  begin="540" end= "3600" period="900" type="BUS" from="517643071#1" to="-8149308#3">
+        <stop busStop="60158" duration="20"/>
+        <stop busStop="59937" duration="20"/>
+        <stop busStop="51479" duration="20"/>
+        <stop busStop="51480" duration="20"/>
+        <stop busStop="51483" duration="20"/>
+        <stop busStop="61579" duration="20"/>
+        <stop busStop="61893" duration="20"/>
+        <stop busStop="61833" duration="20"/>
+        <stop busStop="59942" duration="20"/>
+    </flow>
+
+</routes>
