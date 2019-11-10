@@ -6,6 +6,8 @@ import sys
 import optparse
 import csv
 
+tlmain = "cluster_2408362062_27699300_29208010_29767862_3488070969_3889813878_6417091544_6417091545_6417091546_6417091547_6417091548_6417091550_6419638349"
+
 # we need to import some python modules from the $SUMO_HOME/tools directory
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -34,11 +36,22 @@ def run():
     busRecords = []
     step = 0
 
+    # we start with phase 2 where EW has green
+    # traci.trafficlight.setPhase("0", 2)
+
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep(step*1.0)
-        vehicles = traci.vehicle.getIDList()
-        busRecords.append(vehicles)
-        print(len(busRecords))
+        if step % 5 == 0:
+            vehicles = traci.vehicle.getIDList()
+            busRecords.append(vehicles)
+            print(len(busRecords))
+
+        if traci.trafficlight.getPhase(tlmain) != 2:
+            # we are not already switching
+            if traci.inductionloop.getLastStepVehicleNumber("det_0") > 0:
+                # there are buses trying to leave the loop phase2 for transition
+                traci.trafficlight.setPhase(tlmain, 2)
+
         # print(vehicles)
         # buses = []
         # n = len(vehicles)
