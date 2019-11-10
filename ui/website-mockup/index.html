@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Openlayers CSS file-->
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper" class="flex-grid-2-6-4">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion flex-col-2" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <img src="img/logo.png" style="width:140px;" />
+        <!-- <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div> -->
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Map -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-map fa-chart-area"></i>
+          <span>Map View</span></a>
+      </li>
+
+      <!-- Nav Item - Simulations -->
+      <li class="nav-item">
+        <a class="nav-link" href="simulation.html">
+          <i class="fas fa-chart fa-chart-area"></i>
+          <span>Simulations</span></a>
+      </li>
+
+      <!-- Nav Item - Simulations -->
+      <li class="nav-item">
+        <a class="nav-link" href="deployments.html">
+          <i class="fas fa-list fa-chart-area"></i>
+          <span>Deployments</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="flex-col-6 flex-dir-col bg-light">
+
+      <div class="flex-header">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h1 class="h3 mb-0 text-gray-800">Map View</h1>
+        </div>
+      </div>
+
+      <div class="flex-content">
+        <div id="mapdiv"></div>
+      </div>
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+    <!-- Graph Sidebar -->
+    <div id="graph-sidebar" class="collapsed">
+
+      <div class="close-sidebar">
+        <i class="fa fa-lg fa-times-circle"></i>
+      </div>
+
+      <div class="sidebar-target">
+      </div>
+    </div>
+    <!-- End of Sidebar -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <script>
+  var intersections = {
+    "1": {
+      id: "1",
+      lon: -123.245554,
+      lat: 49.266416,
+      name: "Westbrook Mall & University Boulevard",
+      avgbuswait: "15s",
+      cars: "389",
+      peds: "168",
+      policy: "bike",
+    },
+    "2": {
+      id: "2",
+      lon: -123.168268,
+      lat: 49.264097,
+      name: "Macdonald St. & West Broadway",
+      avgbuswait: "15s",
+      cars: "389",
+      peds: "168",
+      policy: "ped",
+    },
+    "3": {
+      id: "3",
+      lon: -123.139144,
+      lat: 49.249464,
+      name: "Granville St. & King Edward Ave.",
+      avgbuswait: "15s",
+      cars: "389",
+      peds: "168",
+      policy: "bike",
+    }
+  }
+
+  </script>
+
+</body>
+
+<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
+ <!-- Openlayesr JS fIle -->
+<script type="text/javascript" src="js/map.js" type="text/javascript"></script>
+
+</html>
